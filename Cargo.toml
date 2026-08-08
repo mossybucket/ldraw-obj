@@ -1,0 +1,18 @@
+[package]
+name = "ldraw-obj"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+
+[dependencies]
+anyhow = "1"
+rayon = "1.11"
+walkdir = "2.5"
+glam = "0.30"
+dashmap = "6"
+ahash = "0.8"
+parking_lot = "0.12"
